@@ -1,0 +1,206 @@
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+
+/* :root {
+    --primary: #10E8CB;
+    --secondary: #81FCFA;
+    --tertiary: #EBEFEF;
+    --accent: #E9A740;
+    --white: #EEF5FF;
+} */
+
+:root {
+    --primary: #00B4D8;
+    --secondary: #90E0EF;
+    --tertiary: #CAF0F8;
+    --accent: #E9A740;
+    --fontAccent: rgba(3, 4, 94);
+    --white: #EEF5FF;
+}
+
+.primary-bg {
+    background-color: var(--primary);
+}
+
+.secondary-bg {
+    background-color: var(--secondary);
+}
+
+.tertiary-bg {
+    background-color: var(--tertiary);
+}
+
+.accent-bg {
+    background-color: var(--accent);
+}
+
+.fontAccent {
+    color: var(--fontAccent);
+}
+
+.borderPreview {
+    border-style: dashed;
+    border-color: var(--primary);
+}
+
+body {
+    margin-top: 12vh;
+    background-image: url("/public/img/sfondo_presto_modified.png");
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    font-family: "urbanist";
+}
+
+
+.navMorph-inner {
+    background: rgba(0, 180, 216, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(16, 232, 203, 0.3);
+    /* -webkit-box-shadow: 0px 7px 10px 6px #000000;
+-moz-box-shadow: 0px 7px 10px 6px #000000;
+-o-box-shadow: 0px 7px 10px 6px #000000;
+box-shadow: 0px 7px 10px 4px #77edd8; */
+}
+
+.scrollMorph-inner{
+    /* background: rgba(16, 232, 203, 0.7);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 1px solid rgba(129, 252, 250, 0.3); */
+
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.footerMorph-inner-up {
+    background: rgba(144, 224, 239, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(129, 252, 250, 0.3);
+}
+
+.footerMorph-inner-down {
+    background: rgba(0, 180, 216, 0.7);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(16, 232, 203, 0.3);
+}
+
+.cardMorph {
+    width: 50%;
+    height: 70vh;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.cardMorph-inner {
+    width: 80%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.cardInputMorph {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.img-preview{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+}
+
+.footerLinks{
+    text-decoration: none;
+}
+
+.footerLinks:hover{
+    text-decoration: underline;
+}
+
+/* .languageFlags {
+    width: 62px;
+    height: auto;
+} */
+
+
+/* Dispositivi mobili piccoli, medi e grandi */
+@media screen and (min-width: 320px) and (max-width: 766.4px) {
+    .cardMorph {
+        width: 90vw;
+        height: auto;
+    }
+
+
+    /* .buttonCustomWarning{
+        width: 30%;
+        height: 40px;
+
+
+    }
+    .buttonSearch{
+        width: 35%;
+        height: 40px;
+
+    }
+
+    .buttonCustomSuccess{
+        font-size: small;
+        width: 50%;
+    }
+
+    .buttonCustomDanger{
+       font-size: small;
+        width: 50%;
+        margin-top: 4px;
+    } */
+}
+
+/* Tablet e laptop*/
+@media screen and (min-width: 767.2px) and (max-width: 1159.2px) {
+    .cardMorph {
+          width: 60vw;
+          height: auto;
+      }
+  }
+
+/* Laptop grandi e schermi */
+@media screen and (min-width: 1160px), screen and (min-height: 1160px) {
+    .cardMorph {
+        width: 45vw;
+        height: auto;
+    }
+    /* .buttonCustomSuccess{
+      margin-right: 50px;
+    } */
+}
+
+
+
